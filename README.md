@@ -12,15 +12,12 @@ warning: has some hardcoded values and does VERY LITTLE error checking. the hard
 
 # usage example
 -most commonly,
-
 python nessus_CSVparse.py -f <filename> -p <plugin_ID> 
 
 -or, if you want multiple plugins at once,
-
 python nessus_CSVparse.py -f <filename> -pl <file where plugin IDs are listed (deliminated by \n)> 
 
 (note: -pl is currently a pipe dream, its currently just taking in straight commandline input in the form of "deliminated by ','" and doesn't handle whitespace.) 
 
 -print a list of hosts (and ports) of web servers
-
 python nessus_CSVparse.py -w -f <filename> 
